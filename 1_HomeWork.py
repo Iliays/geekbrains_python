@@ -1,14 +1,14 @@
 key = True
-while key is True:
+while key:
     main_answer = int(input('\nВведите сложность задачи\n1 - easy\n2 - normal\n3 - hard\n'
                             '0 - Чтобы выйти!\nСтрока ввода: '))
     if main_answer == 0:
         print('Спасибо за использование программы, буду ждать Вас снова ^_^')
-        break
+        key = False
 
     if main_answer == 1:
         second_key = True
-        while second_key is True:
+        while second_key:
                 answer = int(input('\nВведите номер задачи\n1 - Задача№1\n2 - Задача№2\n3 - Задача№3\n'
                                    '0 - Чтобы выйти!\nСтрока ввода: '))
                 if answer == 0:
@@ -32,7 +32,7 @@ while key is True:
 
     elif main_answer == 2:
         second_key = True
-        while second_key is True:
+        while second_key:
                 answer = int(input('\nВведите номер задачи\n1 - Задача№1\n2 - Задача№2\n'
                                    '0 - Чтобы выйти!\nСтрока ввода: '))
                 if answer == 0:
@@ -70,11 +70,11 @@ while key is True:
                     num2 = int(input('Введите второе число: '))
                     num, num2 = num2, num
                     print(num, num2)
-                
+
     elif main_answer == 3:
         print(' ' * 10, 'Медицинская анкета')
         second_key = True
-        while second_key is True:
+        while second_key:
             answer = int(input('\nВыберите действие\n1 - Ввести данные\n'
                                '0 - Чтобы завершить сеанс!\nСтрока ввода: '))
             if answer == 0:
