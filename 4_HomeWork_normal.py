@@ -8,18 +8,13 @@
 # te_4_st@test.com - верно указан.
 import re
 name = input('Enter your name: ')
-surname = input('Enter your surname: ')
 email = input('Enter your email: ')
-pattern = '[A-Z][a-z]+'
+pattern = '[A-Z][a-z]+ [A-Z][a-z]+'
 pattern2 = '[a-z0-9_]+@[a-z0-9]+\.(com|ru|org)'
 if re.search(pattern, name):
     print('Name is correct')
 else:
     print('The name is not entered correctly')
-if re.search(pattern, surname):
-    print('Surname is correct')
-else:
-    print('The surname is not entered correctly')
 if re.search(pattern2, email):
     print('Email is correct')
 else:
