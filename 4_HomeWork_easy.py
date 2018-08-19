@@ -13,12 +13,11 @@ print(res)
 arr = ['Apple', 'Pineapple', 'Orange', 'Banana']
 arr2 = ['Apple', 'Pineapple']
 res = []
-for i in arr:
-    for j in arr2:
-        if i == j:
-            res.append(i)
-
+for i in arr2:
+    if i in arr:
+        res.append(i)
 print(res)
+
 # Задание-3:
 # Дан список, заполненный произвольными числами.
 # Получить список из элементов исходного, удовлетворяющих следующим условиям:
